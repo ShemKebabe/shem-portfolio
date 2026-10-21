@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ===== BASIC META / SEO ===== -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shem Ogendi Kebabe | Portfolio & Online CV</title>
+  <meta name="description" content="Portfolio and online CV of Shem Ogendi Kebabe, a final-year university student open to internships, graduate trainee and entry-level roles." />
+  <meta property="og:title" content="Shem Ogendi Kebabe | Portfolio & Online CV" />
+  <meta property="og:description" content="Final-year student open to internships, graduate trainee and entry-level roles. View projects, skills, certificates and CV." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/profile.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+
+  <!-- Google Fonts: Poppins (headings) + Inter (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet" />
+  <!-- Font Awesome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Scroll progress bar -->
+  <div id="progress-bar" aria-hidden="true"></div>
+
+  <!-- ===== 1. HEADER / NAVBAR ===== -->
+  <header class="navbar" id="top">
+    <nav class="container nav-inner" aria-label="Main navigation">
+      <a href="#hero" class="logo">Shem<span>.</span></a>
+      <span class="badge open-badge nav-badge"><span class="dot"></span> Open to Work</span>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#achievements">Awards</a></li>
+        <li><a href="#references">References</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="theme-toggle" class="icon-btn" aria-label="Toggle dark/light mode"><i class="fa-solid fa-moon"></i></button>
+        <button id="hamburger" class="icon-btn hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links"><i class="fa-solid fa-bars"></i></button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ===== 2. HERO ===== -->
+    <section id="hero" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text reveal">
+          <span class="badge open-badge"><span class="dot"></span> Open to Work — Internships & Graduate Roles</span>
+          <h1>Shem Ogendi Kebabe</h1>
+          <!-- EDIT: your headline -->
+          <p class="headline">Final-Year Student | Aspiring [Your Target Role]</p>
+          <p class="tagline">I turn ideas into practical, well-built solutions — combining [your field] knowledge with hands-on web and data skills.</p>
+          <div class="hero-buttons no-print">
+            <a href="assets/Shem_Ogendi_Kebabe_CV.pdf" class="btn btn-primary" download><i class="fa-solid fa-download"></i> Download CV (PDF)</a>
+            <a href="#contact" class="btn btn-accent"><i class="fa-solid fa-handshake"></i> Hire Me</a>
+            <a href="#projects" class="btn btn-outline"><i class="fa-solid fa-folder-open"></i> View Projects</a>
+            <button class="btn btn-outline" id="print-btn"><i class="fa-solid fa-print"></i> Print / Save as PDF</button>
+          </div>
+        </div>
+        <div class="hero-photo reveal">
+          <!-- EDIT: replace assets/profile.jpg with your photo (square, ~600x600) -->
+          <img src="assets/profile.jpg" alt="Portrait of Shem Ogendi Kebabe" onerror="this.src='https://placehold.co/600x600/0b1f3a/14b8a6?text=SOK'" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 3. ABOUT ME ===== -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title reveal">About Me</h2>
+        <div class="about-grid">
+          <div class="reveal">
+            <p>I am a motivated 4th-year (final-year) student at <strong>[University Name]</strong> studying <strong>[Programme]</strong>. I enjoy solving real problems with technology and have built systems such as a Digital Occurrence Book for police record-keeping.</p>
+            <p><strong>Career objective:</strong> To join a forward-thinking organisation as an intern, graduate trainee or entry-level [role], where I can apply my skills, learn quickly and add measurable value.</p>
+            <!-- What I'm Looking For box -->
+            <div class="looking-box">
+              <h3><i class="fa-solid fa-bullseye"></i> What I'm Looking For</h3>
+              <ul>
+                <li><strong>Roles:</strong> Internship, Graduate Trainee, Entry-level [Role]</li>
+                <li><strong>Industries:</strong> [e.g. Tech, Finance, NGOs, Sustainability]</li>
+                <li><strong>Available from:</strong> [Month Year]</li>
+              </ul>
+            </div>
+          </div>
+          <ul class="facts reveal">
+            <li><i class="fa-solid fa-location-dot"></i> <span><strong>Location</strong>[City, Country]</span></li>
+            <li><i class="fa-solid fa-calendar-check"></i> <span><strong>Availability</strong>Immediately / [Month Year]</span></li>
+            <li><i class="fa-solid fa-language"></i> <span><strong>Languages</strong>English, Kiswahili, [Other]</span></li>
+            <li><i class="fa-solid fa-envelope"></i> <span><strong>Email</strong><a href="mailto:youremail@example.com">youremail@example.com</a></span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 4. EDUCATION (timeline) ===== -->
+    <section id="education" class="section alt">
+      <div class="container">
+        <h2 class="section-title reveal">Education</h2>
+        <div class="timeline">
+          <div class="tl-item reveal">
+            <span class="tl-date">[Year] – Present</span>
+            <h3>[Programme, e.g. BSc Information Systems]</h3>
+            <p class="tl-org">[University Name]</p>
+            <p>4th Year, expected graduation <strong>[Month Year]</strong>.</p>
+            <p><strong>Relevant coursework:</strong> [Database Systems, Web Development, Statistics, Project Management]</p>
+          </div>
+          <div class="tl-item reveal">
+            <span class="tl-date">[Year] – [Year]</span>
+            <h3>Kenya Certificate of Secondary Education (KCSE)</h3>
+            <p class="tl-org">[High School Name]</p>
+            <p>Grade: [Grade]</p>
+          </div>
+          <!-- Copy a .tl-item block to add other institutions or programmes -->
+          <div class="tl-item reveal">
+            <span class="tl-date">[Year]</span>
+            <h3>[Other programme / short course]</h3>
+            <p class="tl-org">[Institution]</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 5. SKILLS ===== -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 class="section-title reveal">Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-card reveal">
+            <h3><i class="fa-solid fa-code"></i> Technical</h3>
+            <!-- EDIT: data-level is the % width of the bar -->
+            <div class="bar" data-level="85"><span>HTML & CSS</span><div class="track"><div class="fill"></div></div></div>
+            <div class="bar" data-level="75"><span>JavaScript</span><div class="track"><div class="fill"></div></div></div>
+            <div class="bar" data-level="70"><span>PHP & MySQL</span><div class="track"><div class="fill"></div></div></div>
+            <div class="bar" data-level="65"><span>Data Analysis</span><div class="track"><div class="fill"></div></div></div>
+          </div>
+          <div class="skill-card reveal">
+            <h3><i class="fa-solid fa-users"></i> Soft Skills</h3>
+            <div class="chips">
+              <span class="chip">Communication</span><span class="chip">Teamwork</span><span class="chip">Problem Solving</span>
+              <span class="chip">Leadership</span><span class="chip">Time Management</span><span class="chip">Adaptability</span>
+            </div>
+          </div>
+          <div class="skill-card reveal">
+            <h3><i class="fa-solid fa-screwdriver-wrench"></i> Tools</h3>
+            <div class="chips">
+              <span class="chip">Git & GitHub</span><span class="chip">VS Code</span><span class="chip">MS Excel</span>
+              <span class="chip">XAMPP</span><span class="chip">Power BI</span><span class="chip">Figma</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 6. PROJECTS (generated from js/script.js) ===== -->
+    <section id="projects" class="section alt">
+      <div class="container">
+        <h2 class="section-title reveal">Projects / Websites I've Built</h2>
+        <div class="filters no-print" role="group" aria-label="Filter projects">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="web">Web</button>
+          <button class="filter-btn" data-filter="data">Data</button>
+          <button class="filter-btn" data-filter="academic">Academic</button>
+        </div>
+        <div class="card-grid" id="project-grid"></div>
+      </div>
+    </section>
+
+    <!-- ===== 7. CERTIFICATES (generated from js/script.js) ===== -->
+    <section id="certificates" class="section">
+      <div class="container">
+        <h2 class="section-title reveal">Certificates</h2>
+        <div class="card-grid" id="cert-grid"></div>
+      </div>
+    </section>
+
+    <!-- Certificate modal / lightbox -->
+    <div class="modal" id="cert-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+      <div class="modal-box">
+        <button class="icon-btn modal-close" id="modal-close" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+        <img id="modal-img" src="" alt="" />
+        <h3 id="modal-title"></h3>
+        <p id="modal-meta"></p>
+        <a id="modal-link" class="btn btn-primary" target="_blank" rel="noopener">Verify Credential</a>
+      </div>
+    </div>
+
+    <!-- ===== 8. EXPERIENCE & LEADERSHIP ===== -->
+    <section id="experience" class="section alt">
+      <div class="container">
+        <h2 class="section-title reveal">Experience & Leadership</h2>
+        <div class="timeline">
+          <div class="tl-item reveal">
+            <span class="tl-date">[Month Year] – [Month Year]</span>
+            <h3>[Industrial Attachment / Intern] – [Role]</h3>
+            <p class="tl-org">[Organisation]</p>
+            <ul><li>[Achievement with a number, e.g. Digitised 500+ records]</li><li>[Responsibility]</li></ul>
+          </div>
+          <div class="tl-item reveal">
+            <span class="tl-date">[Year] – Present</span>
+            <h3>[Club / Society] – [Position]</h3>
+            <p class="tl-org">[University Name]</p>
+            <ul><li>[Led a team of X members to ...]</li></ul>
+          </div>
+          <div class="tl-item reveal">
+            <span class="tl-date">[Year]</span>
+            <h3>Volunteer – [Role]</h3>
+            <p class="tl-org">[Organisation / Community Project]</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 9. ACHIEVEMENTS (optional: delete this whole section if not needed) ===== -->
+    <section id="achievements" class="section">
+      <div class="container">
+        <h2 class="section-title reveal">Achievements & Awards</h2>
+        <div class="card-grid small">
+          <div class="mini-card reveal"><i class="fa-solid fa-trophy"></i><h3>[Award Name]</h3><p>[Issuer], [Year]</p></div>
+          <div class="mini-card reveal"><i class="fa-solid fa-medal"></i><h3>[Scholarship / Dean's List]</h3><p>[Issuer], [Year]</p></div>
+          <div class="mini-card reveal"><i class="fa-solid fa-star"></i><h3>[Competition / Hackathon]</h3><p>[Position], [Year]</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 10. REFERENCES ===== -->
+    <section id="references" class="section alt">
+      <div class="container">
+        <h2 class="section-title reveal">References</h2>
+        <p class="reveal center">Available upon request.</p>
+        <!-- Optional: list two referees. Delete this grid to keep "upon request" only. -->
+        <div class="card-grid small">
+          <div class="mini-card reveal"><h3>[Referee Name]</h3><p>[Title], [Organisation]</p><p><a href="mailto:referee1@example.com">referee1@example.com</a> · [Phone]</p></div>
+          <div class="mini-card reveal"><h3>[Referee Name]</h3><p>[Title], [Organisation]</p><p><a href="mailto:referee2@example.com">referee2@example.com</a> · [Phone]</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 11. CONTACT / HIRE ME ===== -->
+    <section id="contact" class="section">
+      <div class="container contact-grid">
+        <div class="reveal">
+          <h2 class="section-title left">Let's Work Together</h2>
+          <p>Have an internship, graduate trainee or entry-level opportunity? I'd love to hear from you.</p>
+          <ul class="contact-list">
+            <li><i class="fa-solid fa-envelope"></i><a href="mailto:youremail@example.com">youremail@example.com</a></li>
+            <li><i class="fa-solid fa-phone"></i><a href="tel:+254700000000">+254 700 000 000</a></li>
+            <li><i class="fa-brands fa-whatsapp"></i><a href="https://wa.me/254700000000" target="_blank" rel="noopener">Chat on WhatsApp</a></li>
+            <li><i class="fa-brands fa-linkedin"></i><a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><i class="fa-brands fa-github"></i><a href="https://github.com/your-username" target="_blank" rel="noopener">GitHub</a></li>
+          </ul>
+          <a href="https://linkedin.com/in/your-profile" class="btn btn-primary no-print" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i> Connect on LinkedIn</a>
+        </div>
+        <!-- EDIT: replace YOUR_FORM_ID with your Formspree ID (formspree.io). If left as-is, the form opens your email app instead. -->
+        <form id="contact-form" class="contact-form reveal no-print" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
+          <label>Name<input type="text" name="name" required /></label>
+          <label>Email<input type="email" name="email" required /></label>
+          <label>Subject<input type="text" name="subject" required /></label>
+          <label>Message<textarea name="message" rows="5" required></textarea></label>
+          <p class="form-error" id="form-error" role="alert"></p>
+          <button type="submit" class="btn btn-accent"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
+          <p class="form-success" id="form-success" role="status" hidden>Thank you! Your message has been sent. I'll reply soon.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== 12. FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="socials">
+        <a href="https://linkedin.com/in/your-profile" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/your-username" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://wa.me/254700000000" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="mailto:youremail@example.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+      <p>&copy; <span id="year"></span> Shem Ogendi Kebabe. All rights reserved.</p>
+      <a href="#top" class="btn btn-outline small no-print"><i class="fa-solid fa-arrow-up"></i> Back to top</a>
+    </div>
+  </footer>
+
+  <!-- Sticky Hire Me button -->
+  <a href="#contact" class="sticky-hire no-print"><i class="fa-solid fa-briefcase"></i> Hire Me</a>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
