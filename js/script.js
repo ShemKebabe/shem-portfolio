@@ -43,26 +43,26 @@ const projects = [
    --------------------------------------------------------- */
 const certificates = [
   {
-    title: "[Certificate Name, e.g. Google Data Analytics]",
-    issuer: "[Issuer, e.g. Coursera]",
-    date: "[Month Year]",
+    title: "Introduction to Cybersecurity",
+    issuer: "Cisco Networking Academy",
+    date: "[Dec 2025]",
     image: "assets/certificates/cert1.jpg",
-    link: "#",
+    link: "assets/Introduction_to_Cybersecurity_certificate_1060596-cuea-edu_98adb742-10f5-4d1d-95a2-a2bdb37c8019.pdf",
   },
   {
-    title: "[Certificate Name]",
-    issuer: "[Issuer]",
+    title: " AI Foundations Associate",
+    issuer: "Oracle University",
     date: "[Month Year]",
     image: "assets/certificates/cert2.jpg",
     link: "#",
   },
-  {
+  /* to be added later on upon achievement{
     title: "[Certificate Name]",
     issuer: "[Issuer]",
     date: "[Month Year]",
     image: "assets/certificates/cert3.jpg",
     link: "#",
-  },
+  },*/
 ];
 
 /* Fallback image if a file is missing */
