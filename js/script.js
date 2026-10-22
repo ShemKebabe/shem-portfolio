@@ -45,16 +45,16 @@ const certificates = [
   {
     title: "Introduction to Cybersecurity",
     issuer: "Cisco Networking Academy",
-    date: "[Dec 2025]",
-    image: "assets/certificates/cert1.jpg",
+    date: "[December 2025]",
+    image: "assets/Intro to cybersec.png",
     link: "assets/Introduction_to_Cybersecurity_certificate_1060596-cuea-edu_98adb742-10f5-4d1d-95a2-a2bdb37c8019.pdf",
   },
   {
     title: " AI Foundations Associate",
     issuer: "Oracle University",
-    date: "[Month Year]",
-    image: "assets/certificates/cert2.jpg",
-    link: "#",
+    date: "[August 2025]",
+    image: "assets/oci AI foundations.png",
+    link: "assets/OCI AI foundations certificate.pdf",
   },
   /* to be added later on upon achievement{
     title: "[Certificate Name]",
