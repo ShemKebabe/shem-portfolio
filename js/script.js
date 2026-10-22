@@ -10,31 +10,31 @@
    --------------------------------------------------------- */
 const projects = [
   {
-    title: "Digital Occurrence Book",
+    title: "Digital Occurrence Book :In Progress",
     description: "A secure police occurrence book login system for recording, searching and managing incident reports digitally instead of on paper.",
-    image: "assets/projects/occurrence-book.jpg",
+    image: "assets/POLICEOB.png",
     tech: ["PHP", "JavaScript", "HTML", "MySQL"],
     category: "web",
     demo: "#",
-    source: "https://github.com/your-username/digital-occurrence-book",
+   
   },
   {
-    title: "[Data Project Title]",
-    description: "[Short description, e.g. Analysed sales data to identify trends and built a dashboard.]",
-    image: "assets/projects/data-project.jpg",
-    tech: ["Python", "Excel", "Power BI"],
-    category: "data",
-    demo: "#",
-    source: "#",
+    title: "Mediator Chandah: Mediation Services Website",
+    description: "[A responsive website for a professional mediation practice in Nairobi, helping clients learn about services, understand the benefits of mediation, read blogs and book a session online. Built as a team project, where I was responsible for the design, the Services and Contact pages and the responsive layout]",
+    image: "assets/mediatorchandahwebscreenshot.png",
+    tech: ["React", "Bootsrap", "Teamwork"],
+    category: "web",
+    demo: "https://www.cpmchandah.co.ke/",
+    
   },
   {
-    title: "[Academic Project Title]",
-    description: "[Short description of your final-year or class project.]",
-    image: "assets/projects/academic-project.jpg",
-    tech: ["Research", "Report"],
+    title: "Silveroak Educational Complex : A School Website",
+    description: "[A school website for a kindergarten, primary and junior secondary school, with an admissions announcement banner, pages for Admissions, Academics and Contact, a campus call-to-action and social media links. Hand-coded in HTML and CSS and made mobile-friendly for parents browsing on their phones.]",
+    image: "assets/Silveroakeducomplex.png",
+    tech: ["HTML", "CSS","Javascript"],
     category: "academic",
-    demo: "#",
-    source: "#",
+    demo: "https://silveroakeducationalcomplex.sc.ke/",
+    
   },
 ];
 
