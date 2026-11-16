@@ -1,13 +1,4 @@
-/* =========================================================
-   SCRIPT.JS — Shem Ogendi Kebabe Portfolio
-   ========================================================= */
 
-/* ---------------------------------------------------------
-   1. PROJECTS DATA
-   To add a project: copy one { ... } object, paste it at the
-   end of the array, and change the values.
-   category must be: "web", "data" or "academic"
-   --------------------------------------------------------- */
 const projects = [
   {
     title: "Digital Occurrence Book :In Progress",
@@ -84,7 +75,7 @@ projects.forEach((p) => {
       <div class="tags">${p.tech.map((t) => `<span class="tag">${t}</span>`).join("")}</div>
       <div class="card-links">
         <a href="${p.demo}" class="btn btn-accent small" target="_blank" rel="noopener"><i class="fa-solid fa-up-right-from-square"></i> Live Demo</a>
-        <a href="${p.source}" class="btn btn-outline small" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Source Code</a>
+      
       </div>
     </div>`;
   projectGrid.appendChild(card);
@@ -199,45 +190,7 @@ const observer = new IntersectionObserver((entries) => {
 document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
 
 /* ---------------------------------------------------------
-   9. CONTACT FORM (Formspree with mailto fallback)
-   --------------------------------------------------------- */
-const MY_EMAIL = "youremail@example.com"; // EDIT: your email for the mailto fallback
-const form = document.getElementById("contact-form");
-const errorBox = document.getElementById("form-error");
-const successBox = document.getElementById("form-success");
-
-form.addEventListener("submit", async (e) => {
-  e.preventDefault();
-  errorBox.textContent = "";
-  let valid = true;
-  form.querySelectorAll("input, textarea").forEach((field) => {
-    const ok = field.value.trim() !== "" && (field.type !== "email" || /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(field.value));
-    field.classList.toggle("invalid", !ok);
-    if (!ok) valid = false;
-  });
-  if (!valid) { errorBox.textContent = "Please fill in all fields with a valid email address."; return; }
-
-  const data = new FormData(form);
-  // Fallback: if Formspree ID not set, open the visitor's email app
-  if (form.action.includes("YOUR_FORM_ID")) {
-    const body = encodeURIComponent(`Name: ${data.get("name")}\nEmail: ${data.get("email")}\n\n${data.get("message")}`);
-    window.location.href = `mailto:${MY_EMAIL}?subject=${encodeURIComponent(data.get("subject"))}&body=${body}`;
-    successBox.hidden = false;
-    form.reset();
-    return;
-  }
-  try {
-    const res = await fetch(form.action, { method: "POST", body: data, headers: { Accept: "application/json" } });
-    if (!res.ok) throw new Error();
-    successBox.hidden = false;
-    form.reset();
-  } catch {
-    errorBox.textContent = "Sorry, something went wrong. Please email me directly.";
-  }
-});
-
-/* ---------------------------------------------------------
-   10. PRINT BUTTON + FOOTER YEAR
+   9. PRINT BUTTON + FOOTER YEAR
    --------------------------------------------------------- */
 document.getElementById("print-btn").addEventListener("click", () => window.print());
 document.getElementById("year").textContent = new Date().getFullYear();

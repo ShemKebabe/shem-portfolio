@@ -154,12 +154,6 @@ img { max-width: 100%; display: block; }
 .contact-grid { display: grid; gap: 40px; }
 .contact-list { list-style: none; display: grid; gap: 14px; margin: 20px 0 24px; }
 .contact-list i { color: var(--teal); width: 24px; }
-.contact-form { background: var(--card); padding: 28px; border-radius: var(--radius); box-shadow: var(--shadow); display: grid; gap: 16px; }
-.contact-form label { display: grid; gap: 6px; font-weight: 500; font-size: .92rem; }
-.contact-form input, .contact-form textarea { padding: 12px 14px; border: 1px solid var(--border); border-radius: 10px; background: var(--bg); color: var(--text); font: inherit; }
-.contact-form .invalid { border-color: #e5484d; }
-.form-error { color: #e5484d; font-size: .88rem; min-height: 1em; }
-.form-success { color: var(--teal-dark); font-weight: 600; }
 
 /* ----- 12. FOOTER & STICKY ----- */
 .footer { background: var(--navy); color: #cbd6e6; padding: 40px 0; }
@@ -180,7 +174,6 @@ img { max-width: 100%; display: block; }
   .about-grid { grid-template-columns: 1.5fr 1fr; }
   .skills-grid { grid-template-columns: repeat(3, 1fr); }
   .card-grid { grid-template-columns: repeat(2, 1fr); }
-  .contact-grid { grid-template-columns: 1fr 1.2fr; }
   .nav-badge { display: inline-flex; }
 }
 @media (min-width: 1200px) {
@@ -201,7 +194,7 @@ img { max-width: 100%; display: block; }
   .hero h1 { font-size: 20pt; margin: 4px 0; }
   .badge { border: none; padding: 0; color: #000; }
   .dot { display: none; }
-  .tl-item, .card, .mini-card, .skill-card, .facts li, .looking-box, .contact-form { box-shadow: none; border: none; padding: 4px 0; background: none; page-break-inside: avoid; }
+  .tl-item, .card, .mini-card, .skill-card, .facts li, .looking-box { box-shadow: none; border: none; padding: 4px 0; background: none; page-break-inside: avoid; }
   .timeline { border: none; padding: 0; }
   .tl-item::before { display: none; }
   .card-grid, .skills-grid, .about-grid, .contact-grid, .hero-inner { display: block; }
